@@ -22,7 +22,6 @@ function playRound(e) {
     const playerSelection = e.currentTarget.dataset.selection;
     const cpuSelection = getRandomSelection();
 
-    alert(playerSelection + " vs " + cpuSelection);
     displayPopup(playerSelection, cpuSelection);
 
     if (playerSelection === cpuSelection) {
