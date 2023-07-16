@@ -1,2 +1,7 @@
 /.vscode/
 /.history/
+/node_modules/
+package.json
+package-lock.json
+tailwindcss.css
+tailwind.config.js
