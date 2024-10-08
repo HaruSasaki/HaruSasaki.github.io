@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BuildConfig",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the boilerplate, also used as the command name."
+    },
+    "version": {
+      "type": "string",
+      "description": "The version of the boilerplate."
+    },
+    "ignoredFiles": {
+      "type": "array",
+      "description": "Ignored files in the boilerplate registry folder.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dependencies": {
+      "type": "array",
+      "description": "The dependencies of the boilerplate.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "devDependencies": {
+      "type": "array",
+      "description": "The dependencies of the boilerplate for development.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "registryDependencies": {
+      "type": "array",
+      "description": "The dependencies of the boilerplate in the registry.",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["name", "version"]
+}
